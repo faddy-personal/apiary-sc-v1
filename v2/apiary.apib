@@ -1,7 +1,7 @@
 
 
 ## Release a held line item [/org/{site_name}/api/v1/order/{order_id}/release-line-item/{line_item_id}]
-Release a particular line item from hold using the order_id and the line_item_id.  
+Release a line item from hold using the order_id and the line_item_id.  
 Returns an error if the line item cannot be release (e.g. it was never on hold)
 
 + Parameters
@@ -16,7 +16,7 @@ Returns an error if the line item cannot be release (e.g. it was never on hold)
         
             Accept: application/json
 
-+ Response 204
++ Response 200
 
 + Response 200 (application/json)
 
