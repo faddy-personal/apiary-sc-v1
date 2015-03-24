@@ -4667,35 +4667,3 @@ Returns an error if the line item cannot be held (e.g. it is shipped already, or
             }
         }
 
-
-## Release a held line item [/org/{site_name}/api/v1/order/{order_id}/release-line-item/{line_item_id}]
-Release a particular line item from hold using the order_id and the line_item_id.  
-Returns an error if the line item cannot be release (e.g. it was never on hold)
-
-+ Parameters
-    + site_name (required, string, `traveldemo`) ... `site name` to which the Order belongs
-    + order_id (required, Long, `12345`) ... `id` of the order
-    + line_item_id (required, Long, `54321`) ... `id` of the line item to be released from hold
-    
-### Release a line item from hold [POST]
-+ Request (application/json)
-
-    + Headers
-        
-            Accept: application/json
-
-+ Response 204
-
-+ Response 200 (application/json)
-
-        {
-            "error": {
-                "reason": 403,
-                "type": "GENERIC",
-                "message": "You are not logged in",
-                "id": "56c86c55f43542f9b67ff8fb49fe7574",
-                "attrs": {},
-                "data": ""
-            }
-        }
-
